@@ -1,0 +1,33 @@
+{
+  "name": "electron-react-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.bundle.js",
+  "scripts": {
+    "start": "electron ./dist/main.bundle.js",
+    "development": "rimraf dist && webpack --watch --config ./webpack.dev.js --progress --colors",
+    "production": "rimraf dist && webpack --config ./webpack.prod.js --progress --colors"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.4.12",
+    "@types/react-dom": "^16.0.7",
+    "css-loader": "^1.0.0",
+    "electron": "2.0.8",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
